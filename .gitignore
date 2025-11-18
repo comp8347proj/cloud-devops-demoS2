@@ -13,3 +13,4 @@ media/
 # VSCode / PyCharm
 .vscode/
 .idea/
+/.env

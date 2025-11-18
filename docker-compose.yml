@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  web:
+    build: .
+    container_name: cloud_devops_demo_web_S2
+    command: python manage.py runserver 0.0.0.0:10000
+    ports:
+      - "10000:10000"
+    volumes:
+      - .:/app
+    env_file:
+      - .env
